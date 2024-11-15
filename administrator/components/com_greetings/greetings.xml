@@ -83,5 +83,3 @@
         <server type="extension" priority="1" name="com_greetings">https://nocdn.component-creator.com/index.php?task=builder.preupdatecheckhook&amp;option=com_combuilder&amp;component=NzYzNTMtMjEzNDQw</server>
     </updateservers>
 </extension>
-<!-- Component built by the Joomla Component Creator -->
-<!-- http://www.component-creator.com/ -->

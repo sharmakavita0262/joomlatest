@@ -18,24 +18,20 @@ use \Joomla\CMS\Language\Text;
 use \Joomla\CMS\Session\Session;
 use Joomla\Utilities\ArrayHelper;
 
-
+// Import CSS
+$wa = $this->document->getWebAssetManager();
+$wa->useStyle('com_greetings.show');
 ?>
 
 <div class="item_fields">
 
 	<table class="table">
-		
-
 		<tr>
-			<th><?php echo Text::_('COM_GREETINGS_FORM_LBL_GREETING_MESSAGE'); ?></th>
-			<td><?php echo nl2br($this->item->message); ?></td>
+			<td class="greeting__title"><?php echo $this->item->title; ?></td>
 		</tr>
-
 		<tr>
-			<th><?php echo Text::_('COM_GREETINGS_FORM_LBL_GREETING_TITLE'); ?></th>
-			<td><?php echo $this->item->title; ?></td>
+			<td class="greeting__message"><?php echo nl2br($this->item->message); ?></td>
 		</tr>
-
 	</table>
 
 </div>

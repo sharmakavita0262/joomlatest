@@ -1,0 +1,9 @@
+.greeting__title {
+    font-size: x-large;
+    font-variant-caps: all-petite-caps;
+    font-weight: 600;
+}
+
+.greeting__message {
+    border-bottom: none;
+}

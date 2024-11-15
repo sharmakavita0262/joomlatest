@@ -7,7 +7,6 @@ namespace My\Module\RandomGreeting\Site\Dispatcher;
 use Joomla\CMS\Dispatcher\AbstractModuleDispatcher;
 use Joomla\CMS\Helper\HelperFactoryAwareInterface;
 use Joomla\CMS\Helper\HelperFactoryAwareTrait;
-use Joomla\CMS\Language\Text;
 
 class Dispatcher extends AbstractModuleDispatcher implements HelperFactoryAwareInterface
 {

@@ -24,6 +24,11 @@
         "name": "com_greetings.list",
         "type": "style",
         "uri": "com_greetings/list.css"
-    }
+    },
+    {
+      "name": "com_greetings.show",
+      "type": "style",
+      "uri": "com_greetings/show.css"
+    } 
   ]
 }

@@ -15,7 +15,7 @@ $listOrder = $this->escape($this->state->get('list.ordering'));
 $listDirn = $this->escape($this->state->get('list.direction'));
 
 ?>
-<form action="<?php echo Route::_('index.php?option=com_greeting&c=greeting');?>" method="post" name="adminForm" id="adminForm">
+<form action="<?php echo Route::_('index.php?option=com_greeting&c=greetings');?>" method="post" name="adminForm" id="adminForm">
     <div id="j-main-container">
         
         <div id="filter-bar" class="btn-toolbar">

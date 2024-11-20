@@ -11,8 +11,8 @@ class GreetingModelGreetings extends ListModel
     {
         if (empty($config['filter_fields'])) {
             $config['filter_fields'] = array(
-                'name', 'name',
-                'detail', 'detail'
+                'title', 'title',
+                'message', 'message'
             );
         }
         parent::__construct($config);
@@ -29,13 +29,13 @@ class GreetingModelGreetings extends ListModel
     {
         $db = Factory::getContainer()->get('DatabaseDriver');
         $query = $db->getQuery(true);
-        $query->select('*')->from($db->quoteName('ea1bf_greeting_greeting'));
+        $query->select('*')->from($db->quoteName('#__greetings'));
 
         if ($this->getState('filter.search') !== '') {                    
             $token = $db->quote('%' . $db->escape($this->getState('filter.search'), true) . '%');
             $searches = array();
-            $searches[] = $db->quoteName('name') . ' LIKE ' . $token;
-            $searches[] = $db->quoteName('detail') . ' LIKE ' . $token;
+            $searches[] = $db->quoteName('title') . ' LIKE ' . $token;
+            $searches[] = $db->quoteName('message') . ' LIKE ' . $token;
             $query->where('(' . implode(' OR ', $searches) . ')');
         }              
 

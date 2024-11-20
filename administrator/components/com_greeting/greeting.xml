@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="component" version="5.0.0" method="upgrade">
+    <name>com_greeting</name>
+    <author>Your Name</author>
+    <creationDate>2024-06-20</creationDate>
+    <copyright>Your Company</copyright>
+    <license>GPL</license>
+    <version>1.0.0</version>
+    <description>Greeting Component for Joomla 5</description>
+    <files>
+        <folder>controllers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+        <filename>greeting.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.com_greeting.ini</language>
+        <language tag="th-TH">language/th-TH/th-TH.com_greeting.ini</language>
+    </languages>
+    <administration>
+        <menu>Greeting</menu>
+    </administration>
+</extension>

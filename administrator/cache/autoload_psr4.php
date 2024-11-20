@@ -1,8 +1,6 @@
 <?php
 defined('_JEXEC') or die;
 return [
-	'Greetings\\Component\\Greetings\\Administrator\\' => [JPATH_ADMINISTRATOR . '/components/com_greetings/src'],
-	'Greetings\\Component\\Greetings\\Site\\' => [JPATH_SITE . '/components/com_greetings/src'],
 	'Joomla\\Component\\Actionlogs\\Administrator\\' => [JPATH_ADMINISTRATOR . '/components/com_actionlogs/src'],
 	'Joomla\\Component\\Admin\\Administrator\\' => [JPATH_ADMINISTRATOR . '/components/com_admin/src'],
 	'Joomla\\Component\\Associations\\Administrator\\' => [JPATH_ADMINISTRATOR . '/components/com_associations/src'],

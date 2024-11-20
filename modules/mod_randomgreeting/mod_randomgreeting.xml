@@ -33,8 +33,4 @@
             </fieldset>
         </fields>
     </config>
-     <updateservers>
-        <!-- Change the URL below to match that of your own update development environment -->
-        <server type="extension" name="Hello Module Updates">http://localhost/j500b1/updateserver/updates.xml</server>
-    </updateservers>
 </extension>

@@ -12,7 +12,7 @@ class GreetingViewGreetings extends BaseHtmlView
         $this->items = $this->get('Items');
         $this->pagination = $this->get('Pagination');
         $this->state = $this->get('State');
-        $this->addToolbar();
+        //$this->addToolbar();
         parent::display($tpl);
     }   
 

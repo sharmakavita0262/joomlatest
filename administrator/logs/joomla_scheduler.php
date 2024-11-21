@@ -19,3 +19,8 @@
 2024-11-19	08:36:31	INFO	Successfully finished task#02 in 0.00 (net 0.00) seconds.
 2024-11-19	08:36:31	INFO	Running task#03 'Update Notification'.
 2024-11-19	08:36:32	INFO	Successfully finished task#03 in 1.62 (net 1.62) seconds.
+2024-11-20	11:58:32	INFO	Running task#02 'Session GC'.
+2024-11-20	11:58:32	INFO	Task> SessionGC end
+2024-11-20	11:58:32	INFO	Successfully finished task#02 in 0.00 (net 0.00) seconds.
+2024-11-20	12:00:50	INFO	Running task#03 'Update Notification'.
+2024-11-20	12:01:20	INFO	Successfully finished task#03 in 30.10 (net 30.10) seconds.

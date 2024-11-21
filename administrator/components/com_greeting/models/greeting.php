@@ -24,9 +24,9 @@ class GreetingModelGreeting extends FormModel
 
         try {
             if ($obj->id) {
-                $db->updateObject('#__greeting', $obj, 'id');
+                $db->updateObject('#__greetings', $obj, 'id');
             } else {
-                $db->insertObject('#__greeting', $obj, 'id');
+                $db->insertObject('#__greetings', $obj, 'id');
             }
         } catch (\RuntimeException $exc) {
             Factory::getApplication()->enqueueMessage($exc->getMessage(), 'error');
@@ -55,7 +55,7 @@ class GreetingModelGreeting extends FormModel
         $db = Factory::getContainer()->get('DatabaseDriver');
         $query = $db->getQuery(true);
         $query->select('*')
-              ->from($db->quoteName('#__greeting'))
+              ->from($db->quoteName('#__greetings'))
               ->where($db->quoteName('id') . ' = ' . $db->quote($pk));
     
         $db->setQuery($query);
@@ -75,7 +75,7 @@ class GreetingModelGreeting extends FormModel
             $db = Factory::getContainer()->get('DatabaseDriver');
             $query = $db->getQuery(true);
             try {
-                    $query->delete('#__greeting')
+                    $query->delete('#__greetings')
                             ->where($db->quoteName('id').'='.$db->quote($id));
                     $db->setQuery($query);
                     $db->execute();

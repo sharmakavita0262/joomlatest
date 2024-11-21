@@ -87,6 +87,7 @@ class ExtensionHelper
         ['component', 'com_users', '', 1],
         ['component', 'com_workflow', '', 1],
         ['component', 'com_wrapper', '', 1],
+        ['component', 'com_greetings', '', 1],
 
         // Core file extensions
         ['file', 'joomla', '', 0],
@@ -156,6 +157,7 @@ class ExtensionHelper
         ['module', 'mod_users_latest', '', 0],
         ['module', 'mod_whosonline', '', 0],
         ['module', 'mod_wrapper', '', 0],
+        ['module', 'mod_randomgreeting', '', 0],
 
         // Core package extensions
         ['package', 'pkg_en-GB', '', 0],

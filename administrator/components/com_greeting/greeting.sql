@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `#_greetings` (
+CREATE TABLE IF NOT EXISTS `#__greetings` (
     `id` INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(255) NOT NULL,
     `detail` TEXT,

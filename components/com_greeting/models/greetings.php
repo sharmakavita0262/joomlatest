@@ -29,7 +29,7 @@ class GreetingModelGreetings extends ListModel
     {
         $db = Factory::getContainer()->get('DatabaseDriver');
         $query = $db->getQuery(true);
-        $query->select('*')->from($db->quoteName('ea1bf_greeting_greeting'));
+        $query->select('*')->from($db->quoteName('#__greetings'));
 
         if ($this->getState('filter.search') !== '') {                    
             $token = $db->quote('%' . $db->escape($this->getState('filter.search'), true) . '%');

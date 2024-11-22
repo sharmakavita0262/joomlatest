@@ -8,6 +8,13 @@ HTMLHelper::_('behavior.keepalive');
 HTMLHelper::_('behavior.formvalidator');
 ?>
 
+<?php if ($this->items) : ?>
+    <h1><?php echo $this->escape($this->items->title); ?></h1>
+    <p><?php echo $this->escape($this->items->message); ?></p>
+<?php else: ?>
+    <p>No greeting found.</p>
+<?php endif; ?>
+
 <script>
     Joomla.submitbutton = function(task) {
         if (task == 'cancel' || document.formvalidator.isValid(document.getElementById('adminForm'))) {
@@ -18,7 +25,7 @@ HTMLHelper::_('behavior.formvalidator');
     }
 </script>
 
-<form action="<?php echo Route::_('index.php?option=com_greeting&view=greeting'); ?>" name="adminForm" id="adminForm" method="post" class="form-validate form-horizontal">
+<!-- <form action="<?php echo Route::_('index.php?option=com_greeting&view=greeting'); ?>" name="adminForm" id="adminForm" method="post" class="form-validate form-horizontal">
     <fieldset>
         <?php foreach ($this->form->getFieldset('greeting_form') as $field) { ?>
             <div class="control-group">
@@ -33,4 +40,4 @@ HTMLHelper::_('behavior.formvalidator');
         <input type="hidden" name="task" />
         <?php echo HTMLHelper::_('form.token'); ?>
     </fieldset>
-</form>
+</form> -->

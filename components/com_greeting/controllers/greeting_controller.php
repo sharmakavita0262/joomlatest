@@ -28,7 +28,28 @@ class GreetingController extends BaseController
         $app->input->set('view', 'greeting');
         parent::display();
     }
+    public function view()
+    {
+        $app = Factory::getApplication();
+        $cid = $app->input->getInt('cid', 0); 
+        if ($cid) {
+            $model = $this->getModel('Greeting');
+            $data = $model->getItem();
 
+            if ($data) {
+                $this->input->set('items', $data);
+                $view = $this->getView('greeting', 'html');
+                $view->items = $data;
+                $view->setLayout('default');
+                parent::display();
+                return $this;
+            }
+        }
+
+        $app->enqueueMessage('No greeting found.', 'warning');
+        $app->redirect(JRoute::_('index.php?option=com_greeting&view=greetings', false));
+    }
+    
     function delete() 
         {
             $app = Factory::getApplication();

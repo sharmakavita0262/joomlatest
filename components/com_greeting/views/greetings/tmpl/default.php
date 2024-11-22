@@ -56,8 +56,7 @@ $listDirn = $this->escape($this->state->get('list.direction'));
             <tbody>
                 <?php 
                 foreach ($this->items as $i => $item) {
-                    // $url = Route::_('index.php?option=com_greeting&c=greeting&task=edit&cid=' . $item->id);
-                    $url = Route::_('index.php?option=com_greeting&view=details&id=' . $item->id);
+                    $url = Route::_('index.php?option=com_greeting&c=greeting&task=view&cid=' . $item->id);
                     ?>
                 <tr class="row<?php echo $i % 2; ?>">
                     <td class="center"><?php echo $i + 1;?></td>
